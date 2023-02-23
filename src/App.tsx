@@ -8,7 +8,13 @@ interface Props {
     children: React.ReactNode
 }
 
-const Link = ({ url, className, children }: Props) => {
+type LinkProps = {
+    url: string
+    className?: string
+    children: React.ReactNode
+}
+
+const Link = ({ url, className, children }: LinkProps) => {
     return (
         <a
             className={className}
