@@ -8,6 +8,8 @@ interface Props {
 }
 
 const Link = ({ url, variant, className, children }: Props) => {
+    const hasHyphen = className?.includes('-') ?? false // knows all string methods and that string can be undefined and a boolean by default
+
     return (
         <a
             className={className}
