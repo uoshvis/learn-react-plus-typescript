@@ -4,13 +4,14 @@ import './App.css'
 
 interface Props {
     url: string
+    className?: string
     children: React.ReactNode
 }
 
-const Link = ({ url, children }: Props) => {
+const Link = ({ url, className, children }: Props) => {
     return (
         <a
-            className="App-link"
+            className={className}
             target="_blank"
             rel="noopener noreferrer"
             href={url}
