@@ -24,13 +24,13 @@ const LinkGen = ({
     font: { family = 'arial', size, weight },
 }: ComplexConfig) => {
     return (
-        <React.Fragment>
+        <pre style={{ textAlign: 'left' }}>
             {JSON.stringify(
                 { width, height, crop, family, size, weight },
                 null,
                 2
             )}
-        </React.Fragment>
+        </pre>
     )
 }
 
