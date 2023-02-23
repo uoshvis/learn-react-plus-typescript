@@ -1,10 +1,11 @@
 import React from 'react'
 
 interface Props {
-    increment: () => void
+    increment: (newCount: number) => void
     count: number
 }
 
 export default function Counter({ increment, count }: Props) {
-    return <button onClick={increment}> Counter: {count}</button>
+    const handleClick = () => increment(count + 1)
+    return <button onClick={handleClick}> Counter: {count}</button>
 }
