@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function Counter() {
-    const [count, setCount] = React.useState(0)
+interface Props {
+    increment: () => void
+    count: number
+}
 
-    const increment = () => setCount(count + 1)
-
+export default function Counter({ increment, count }: Props) {
     return <button onClick={increment}> Counter: {count}</button>
 }

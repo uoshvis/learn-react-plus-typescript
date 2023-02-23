@@ -6,6 +6,9 @@ import LinkGen from './ComplicatedStringGen'
 import Counter from './Counter'
 
 function App() {
+    const [count, setCount] = React.useState(0)
+
+    const increment = () => setCount(count + 1)
     return (
         <div className="App">
             <header className="App-header">
@@ -26,7 +29,7 @@ function App() {
                     height={100}
                     width={200}
                 ></LinkGen>
-                <Counter></Counter>
+                <Counter increment={increment} count={count} />
             </header>
         </div>
     )
