@@ -3,6 +3,7 @@ import logo from './logo.svg'
 import './App.css'
 import Link from './Link'
 import LinkGen from './ComplicatedStringGen'
+import Counter from './Counter'
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                     height={100}
                     width={200}
                 ></LinkGen>
+                <Counter></Counter>
             </header>
         </div>
     )
