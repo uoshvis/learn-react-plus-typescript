@@ -7,14 +7,15 @@ interface Props {
     className?: string
     children: React.ReactNode
 }
+// valid way to add types:
 
-type LinkProps = {
-    url: string
-    className?: string
-    children: React.ReactNode
-}
+// type LinkProps = {
+//     url: string
+//     className?: string
+//     children: React.ReactNode
+// }
 
-const Link = ({ url, className, children }: LinkProps) => {
+const Link = ({ url, className, children }: Props) => {
     return (
         <a
             className={className}
