@@ -29,7 +29,7 @@ function App() {
                 <p>
                     Edit <code>src/App.tsx</code> and save to reload.
                 </p>
-                <Link url="https://reactjs.org">
+                <Link url="https://reactjs.org" className="App-link">
                     Learn React with TypeScript
                 </Link>
             </header>
