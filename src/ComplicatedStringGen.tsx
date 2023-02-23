@@ -1,6 +1,9 @@
 import React from 'react'
 
 interface ComplexConfig {
+    /**
+     * The width of the image
+     */
     width: number
     height: number
     crop: 'fill' | 'thumb'
