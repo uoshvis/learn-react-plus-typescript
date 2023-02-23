@@ -2,6 +2,7 @@ import React from 'react'
 import logo from './logo.svg'
 import './App.css'
 import Link from './Link'
+import LinkGen from './ComplicatedStringGen'
 
 function App() {
     return (
@@ -18,6 +19,12 @@ function App() {
                 >
                     Learn React with TypeScript
                 </Link>
+                <LinkGen
+                    crop="fill"
+                    font={{ family: 'sans-serif', size: 100, weight: 200 }}
+                    height={100}
+                    width={200}
+                ></LinkGen>
             </header>
         </div>
     )
