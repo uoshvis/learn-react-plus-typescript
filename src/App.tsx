@@ -21,7 +21,7 @@ function App() {
                 </Link>
                 <LinkGen
                     crop="fill"
-                    font={{ family: 'sans-serif', size: 100, weight: 200 }}
+                    font={{ size: 100, weight: 200 }}
                     height={100}
                     width={200}
                 ></LinkGen>

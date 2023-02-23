@@ -8,14 +8,30 @@ interface ComplexConfig {
     height: number
     crop: 'fill' | 'thumb'
     font: {
-        family: string
+        /**
+         * @default "arial"
+         */
+        family?: string
         size: number
         weight: 100 | 200 | 300 | 400
     }
 }
 
-const LinkGen = (props: ComplexConfig) => {
-    return <React.Fragment>{JSON.stringify(props, null, 2)}</React.Fragment>
+const LinkGen = ({
+    width,
+    height,
+    crop,
+    font: { family = 'arial', size, weight },
+}: ComplexConfig) => {
+    return (
+        <React.Fragment>
+            {JSON.stringify(
+                { width, height, crop, family, size, weight },
+                null,
+                2
+            )}
+        </React.Fragment>
+    )
 }
 
 export default LinkGen
