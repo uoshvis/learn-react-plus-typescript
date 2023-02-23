@@ -8,7 +8,6 @@ import Counter from './Counter'
 function App() {
     const [count, setCount] = React.useState(0)
 
-    const increment = (newCount: number) => setCount(newCount)
     return (
         <div className="App">
             <header className="App-header">
@@ -29,7 +28,7 @@ function App() {
                     height={100}
                     width={200}
                 ></LinkGen>
-                <Counter increment={increment} count={count} />
+                <Counter increment={setCount} count={count} />
             </header>
         </div>
     )
